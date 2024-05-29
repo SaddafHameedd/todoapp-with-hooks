@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+  background-color: #ffe6e6;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.child-div {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+figure img {
+  width: 100px;
+  height: auto;
+}
+
+figcaption {
+  color: #ff6b6b;
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.addItems {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #ff6b6b;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.addItems input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  font-size: 1em;
+  outline: none;
+}
+
+.addItems .fa-plus {
+  cursor: pointer;
+  color: #ff6b6b;
+  font-size: 1.5em;
+  margin-left: 10px;
+}
+
+.addItems .fa-plus:hover {
+  color: #ff4c4c;
+}
+
+.showItems {
+  margin-top: 20px;
+}
+
+.eachItem {
+  background: #fff3f3;
+  padding: 10px;
+  border: 1px solid #ff6b6b;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.eachItem h3 {
+  margin: 0;
+}
+
+.eachItem .fa-trash {
+  cursor: pointer;
+  color: #ff6b6b;
+  font-size: 1.2em;
+}
+
+.eachItem .fa-trash:hover {
+  color: #ff4c4c;
+}
+
+.btn {
+  padding: 10px;
+  border: none;
+  background: #ff6b6b;
+  color: white;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #ff4c4c;
+}
+
+.effect04 {
+  position: relative;
+  background: #ff6b6b;
+  transition: 0.3s ease;
+  overflow: hidden;
+  padding: 10px 20px;
+}
+
+.effect04:hover {
+  background: #ff4c4c;
+}
+
+.effect04 span {
+  position: relative;
+  z-index: 2;
+}
+
+.effect04:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.3);
+  transition: all 0.75s ease;
+  z-index: 1;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.effect04:hover:before {
+  transform: translate(-50%, -50%) scale(1);
+}
